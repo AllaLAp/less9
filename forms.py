@@ -10,7 +10,7 @@ class AdvertisementForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control from-control-lg'}),
             'description': forms.Textarea(attrs={'class':'form-control form-control-lg', 'cols': 60, 'rows': 18}),
-            'price': forms.NumberInput(attrs={'class': 'form-control form-control-lg', 'min': 1}),
+            'price': forms.NumberInput(attrs={'class': 'form-control form-control-lg', 'min': 0}),
             'auction': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
             'image': forms.FileInput(attrs={'class': 'form-control form-control-lg'}),
         }
